@@ -1,7 +1,5 @@
 class ImagesController < ApplicationController
   include ImagesHelper
-  def home
-  end
   def create
     image_params =  params.require(:image).permit([:title, :link])
     url = image_params[:link]
@@ -17,12 +15,4 @@ class ImagesController < ApplicationController
 
   end
 end
-# def index
-#
-# end
-# def new
-#
-# end
-# def create
-#   render plain: params[:image].inspect
-#end
+
