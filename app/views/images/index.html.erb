@@ -14,3 +14,20 @@
       <%= form.submit %>
     </p>
 <% end %>
+
+
+<h1> Listing all images saved </h1>
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Image</th>
+    <th></th>
+  </tr>
+  <% @images.reverse.each do |image|%>
+      <tr>
+        <td><%=image.title %></td>
+        <td><%= image_tag  image.link, :width => 400, :crop => "pad"%>
+        </td>
+      </tr>
+  <%end %>
+</table>

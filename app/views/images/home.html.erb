@@ -1,0 +1,16 @@
+<h1> Listing all Images saved </h1>
+<table>
+
+
+  <tr>
+    <th>Title</th>
+    <th>Image</th>
+    <th></th>
+  </tr>
+<% @images.each do |image|%>
+  <tr>
+    <td>image.title</td>
+    <td><%= image_tag(image.link, :alt => "rss feed") %></td>
+  </tr>
+<%end %>
+</table>
