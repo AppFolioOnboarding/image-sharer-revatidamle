@@ -14,5 +14,8 @@ class ImagesController < ApplicationController
     redirect_to @image.link
 
   end
+  def index
+    @images = Image.all
+  end
 end
 
