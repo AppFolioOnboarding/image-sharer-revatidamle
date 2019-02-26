@@ -28,4 +28,9 @@ class ImageTest < ActiveSupport::TestCase
     im = Image.new(title: 'test_title', link: 'https://google.jpg')
     assert_predicate im, :valid?
   end
+
+  def test_link__invalid_url__with_space
+    im = Image.new(title: 'test_title', link: 'skdjshf sdkfhsd')
+    assert_predicate im, :invalid?
+  end
 end
