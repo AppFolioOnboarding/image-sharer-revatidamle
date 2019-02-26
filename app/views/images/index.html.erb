@@ -1,0 +1,13 @@
+<h4> Listing all images saved </h4>
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Image</th>
+  </tr>
+  <% @all_images.each do |image|%>
+      <tr id= <%= 'id_' + image[:title] %>>
+        <td><%=image.title %></td>
+        <td><%= image_tag  image.link, width: 400, crop: "pad"%></td>
+      </tr>
+  <%end %>
+</table>
