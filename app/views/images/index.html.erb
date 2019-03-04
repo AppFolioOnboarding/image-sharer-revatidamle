@@ -1,22 +1,20 @@
-<h4> Listing all images saved </h4>
-<table>
-  <tr>
-    <th>Title</th>
-    <th>Image</th>
-  </tr>
 <nav class="navbar navbar-light bg-light">
   <div style="text-align:center color: white">Image sharer app</div><br>
-  <form class="form-inline">
     <div style="padding-left: 10px;">
       <a class="btn btn-outline-success" href="/images/new" role="button">Create</a>
     </div>
-  </form>
 </nav>
 
+<div class="container-fluid">
   <% @all_images.each do |image|%>
-      <tr id= <%= 'id_' + image[:title] %>>
-        <td><%=image.title %></td>
-        <td><%= image_tag  image.link, width: 400, crop: "pad"%></td>
-      </tr>
-  <%end %>
-</table>
+       <%= render partial: 'images/card', locals: { image: image } %>
+<%end%>
+</div>
+
+<div class="footer-margin">
+  <footer class="card-footer bg-light footer-font-style text-muted footer-position">
+    <a class="reference external" href="https://github.com/AppFolioOnboarding/image-sharer-revatidamle">
+      <%= image_tag "icon.png" %>
+    </a>
+  </footer>
+</div>

@@ -1,4 +1,4 @@
-<%= simple_form_for @image, defaults: { wrapper_html: { class: 'form_group dfgdfg' }, input_html: { class: 'form-control' } } do |i| %>
+<%= simple_form_for @image, defaults: { input_html: { class: 'form-control' } } do |i| %>
   <%= i.input :title %>
   <%= i.input :link %>
   <%= i.button :submit, class: 'btn-primary btn-lg'  %>

@@ -1,0 +1,22 @@
+.footer-margin {
+  height: 100px;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+#logo {
+  background-image: url('assets/icon.png');
+  display: block;
+}
+
+.container-fluid{
+  display: flex;
+  background-color: grey;
+  background-size: cover;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+
