@@ -12,6 +12,23 @@
  *
  *= require_tree .
 
- //*= require_self
  @import "bootstrap";
  */
+
+.navbar {
+  text-align: center;
+  color: black;
+  padding-left: 10px;
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.footer__logo {
+  background-image: url('assets/icon.png');
+  display: block;
+}
