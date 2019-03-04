@@ -4,6 +4,15 @@
     <th>Title</th>
     <th>Image</th>
   </tr>
+<nav class="navbar navbar-light bg-light">
+  <div style="text-align:center color: white">Image sharer app</div><br>
+  <form class="form-inline">
+    <div style="padding-left: 10px;">
+      <a class="btn btn-outline-success" href="/images/new" role="button">Create</a>
+    </div>
+  </form>
+</nav>
+
   <% @all_images.each do |image|%>
       <tr id= <%= 'id_' + image[:title] %>>
         <td><%=image.title %></td>
