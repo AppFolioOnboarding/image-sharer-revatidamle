@@ -6,5 +6,6 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 18.times do |i|
-  Image.create(title: "image_#{i}", link: "http://power.itp.ac.cn/~jmyang/funny/fun#{i + 1}.jpg")
+  Image.create(title: "image_#{i}", link: "http://power.itp.ac.cn/~jmyang/funny/fun#{i + 1}.jpg",
+               tag_list: ["tag_#{i}"])
 end
