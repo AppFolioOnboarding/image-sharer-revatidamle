@@ -1,12 +1,13 @@
 <nav class="navbar navbar-light bg-light">
-  <div>Image sharer app</div><br>
-      <a class="btn btn-outline-success" href="/images/new" role="button">Create</a>
+  <div>Image sharer app</div>
+     <br/>
+     <a class="btn btn-outline-success" href="/images/new" role="button">Create</a>
 </nav>
 
 <div class="container-fluid">
   <% @all_images.each do |image|%>
-       <%= render partial: 'images/card', locals: { image: image } %>
-<%end%>
+    <%= render partial: 'images/card', locals: { image: image } %>
+  <%end%>
 </div>
 
 <div class="footer-margin">

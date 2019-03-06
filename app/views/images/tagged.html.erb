@@ -1,0 +1,5 @@
+<div class="container-fluid">
+  <% @image.each do |image|%>
+      <%= render partial: 'images/card', locals: { image: image } %>
+  <%end%>
+</div>

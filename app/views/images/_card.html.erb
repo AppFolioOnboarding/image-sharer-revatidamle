@@ -2,6 +2,11 @@
   <img class="card-img-top" id="thumbnail" src="<%=image[:link]%>" />
     <div class="card-body">
       <h5 class="card-title"><%=image[:title]%></h5>
+      <p class="card-text">
+        <%image.tag_list.each do |tag| %>
+          <%= link_to tag , tagged_path(tag: tag)%>
+          <%end%>
+      </p>
       <a href=<%=image[:link]%> class="btn btn-primary">Here's the image</a>
   </div>
 </div>
